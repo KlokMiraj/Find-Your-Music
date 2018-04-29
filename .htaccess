@@ -1,0 +1,12 @@
+RewriteEngine ON
+RewriteBase /home
+
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.)$/index.php/$ [l]
+
+RewriteCond %{REQUEST_URI} ^application.*
+RewriteRule ^(.)$/index.php/$ [l]
+
+RewriteCond %{REWRITE_FILENAME} !-f
+RewriteCond %{REWRITE_FILENAME} !-d
+RewriteRule ^(.)$/index.php/$ [l]
