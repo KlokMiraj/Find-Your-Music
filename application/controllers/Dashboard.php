@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class Controller_page_main extends First_controller{
+class Dashboard extends First_controller{
         public function __construct(){
             parent::__construct();
                 }

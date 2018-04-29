@@ -1,5 +1,5 @@
 RewriteEngine ON
-RewriteBase /home
+RewriteBase /Find-Your-Music
 
 RewriteCond %{REQUEST_URI} ^system.*
 RewriteRule ^(.)$/index.php/$ [l]

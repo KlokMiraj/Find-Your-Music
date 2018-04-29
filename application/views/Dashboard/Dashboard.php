@@ -7,3 +7,8 @@
  */
 ?>
 
+<div class="contianer">
+    <h1>
+        Welcome <?php echo $user->user_name;?>
+    </h1>
+</div>

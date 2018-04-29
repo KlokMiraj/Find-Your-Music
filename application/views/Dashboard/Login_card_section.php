@@ -16,11 +16,11 @@
     
       <div class="card" style="margin-left:75%; width:25%;">
           <div class="card-body">
-                <form class="form-signin" method="post" action="">
+                <form class="form-signin" method="post" action="<?php echo base_url('login');?>">
                     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
                     
                     <label for="inputEmail" class="sr-only">Email address</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
+                    <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required >
                     <label for="inputPassword" class="sr-only">Password</label>
                     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                     <div class="checkbox mb-3">
@@ -31,7 +31,7 @@
                       <a href="#" class="badge badge-success"> Forgot Password</a>
                             
                     </div>
-                    <button class="btn btn-md btn-info " type="submit">Sign in</button>
+                    <button class="btn btn-md btn-info " type="submit" >Sign in</button>
                         <!-- Login Button-->
                     </form>
                 
@@ -58,7 +58,7 @@
                             </div>
                             <div class="modal-body">
                               
-                                  <form class="form-signup" method="post" >
+                                  <form class="form-signup" method="post" action="<?php base_url('login/login_check')?>">
                                      <div class="form-group">
                                       <div class="row">
                                           
@@ -75,7 +75,7 @@
                                          
                                           <div class="col">
                                             <label for="inputEmail" class="sr-only">Email address</label>
-                                             <input type="email" id="inputEmailsingup" class="form-control" placeholder="Email address" required >
+                                             <input type="text" id="inputEmailsingup" class="form-control" placeholder="Email address" required >
                                           </div>
                                           
                                       </div>
